@@ -1,0 +1,128 @@
+/* Base Styles */
+.trackForm {
+  margin: 35px auto;
+  width: 60%; /* Responsive scaling */
+  padding: 20px;
+  background: #575756;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trackForm:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trackHead {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.trackHead span {
+  border: 1px solid #cccccc;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #616161;
+  text-align: center;
+}
+
+.trackHead span:first-child {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+}
+
+.trackHead span:nth-child(2) {
+  background-color: #36a1d2;
+  color: #ffffff;
+  border: none;
+}
+
+.trackNavigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+  gap: 8px;
+}
+
+.trackNavigation button {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #ff7043;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0px 0px rgb(50, 50, 50);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trackNavigation button:hover {
+  transform: scale(1.15);
+  background: #ffc107;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  border-color: #ffc107;
+}
+
+.trackNavigation button.attempted {
+  background-color: #4faf4c;
+  color: white;
+  border: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .trackForm {
+    width: 80%; /* Reduce width for tablets */
+    padding: 15px;
+  }
+
+  .trackHead span {
+    font-size: 14px; /* Adjust font size */
+    padding: 10px 15px;
+  }
+
+  .trackNavigation button {
+    width: 40px; /* Smaller buttons */
+    height: 40px;
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .trackForm {
+    width: 90%; /* Full width */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .trackHead {
+    gap: 10px; /* Smaller gap */
+  }
+
+  .trackHead span {
+    font-size: 12px; /* Smaller font for better fit */
+    padding: 8px 10px;
+  }
+
+  .trackNavigation {
+    gap: 5px; /* Reduce button spacing */
+  }
+
+  .trackNavigation button {
+    width: 35px; /* Smaller buttons for mobile */
+    height: 35px;
+    font-size: 12px; /* Smaller font size */
+  }
+}

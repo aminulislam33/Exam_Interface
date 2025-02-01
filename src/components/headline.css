@@ -1,0 +1,99 @@
+/* Base Styles */
+.headline {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align content vertically */
+    border: 1px solid grey;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.headline img {
+    width: 70px;
+    margin-right: 10px; /* Add some spacing between the image and text */
+}
+
+.headlineContent {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center; /* Center text on smaller screens */
+}
+
+.headlineContent p {
+    margin: 0 10px;
+}
+
+.submitButton {
+    position: relative;
+    margin: 20px auto; /* Center the button horizontally */
+    display: flex;
+    justify-content: center; /* Center the button for all screen sizes */
+    width: 100%; /* Make button container full width */
+}
+
+.submitButton button {
+    border: none;
+    background-color: #5a5aec;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    padding: 4px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: auto; /* Allow button to adjust size dynamically */
+    max-width: 200px; /* Limit maximum button width */
+}
+
+.submitButton button:hover {
+    background-color: #3b3bc6;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .headline img {
+        width: 50px; /* Smaller image size */
+    }
+
+    .headlineContent {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .submitButton {
+        top: 10px;
+        left: 0; /* Remove fixed left positioning */
+        margin: 15px auto; /* Center button */
+        width: 100%;
+    }
+
+    .submitButton button {
+        font-size: 16px; /* Slightly smaller font */
+        padding: 4px 8px;
+        width: 90%; /* Make button width responsive */
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .headline {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .headline img {
+        width: 40px; /* Further reduce image size */
+    }
+
+    .headlineContent {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .submitButton button {
+        font-size: 14px; /* Smaller font size */
+        padding: 3px 6px;
+        width: 80%; /* Further reduce button width */
+    }
+}

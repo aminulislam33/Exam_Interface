@@ -1,0 +1,10 @@
+.examSection{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.trackSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

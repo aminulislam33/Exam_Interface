@@ -1,0 +1,108 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Instruction Component Styles */
+  .instructionTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .instructionTitle h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .instructionTitle p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  .instructionBody {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .instructionCheckBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .instructionCheckBox input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .instructionProceed {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .instructionProceed button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .instructionProceed button:hover {
+    background-color: #0056b3;
+  }
+  
+  .instructionProceed button:active {
+    background-color: #003f7f;
+  }
+
+  .errorMessage{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.errorMessage p{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+} 
+  
+  @media (max-width: 768px) {
+    .instructionBody {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .instructionProceed button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
